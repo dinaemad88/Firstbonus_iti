@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+section{
+   padding:2rem 9%;
+}
+body{
+    background: #0a191d;
+}
+.header{
+    background: #0a191d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom:.1rem solid rgba(255,255,255,.3);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    height:5rem;
+}
+.logo{
+    font-size: 35px;
+    font-weight: bolder;
+    color:#fff;
+    text-decoration:none;
+    margin: 10px;
+   padding-left: 10px;
+ 
+   
+ }
+ .logo span{
+    color:#741818;
+    padding: 2px;
+    font-size: 35px;
+  }
+ 
+
+.header .navbar > a{
+    list-style: none;
+    display: inline-block;
+}
+.header .navbar > a{
+    color: #fff;
+    margin:0 1rem;
+    font-size: 23px;  
+}
+.header .navbar  > a:after ,
+.header.navbar > a.active:after{
+    content:"";
+    width:0;
+    height:2px;
+    display: block;
+    background-color: #73001a;
+    margin-top: 2px;
+    transition: .5s;
+}
+.header .navbar > a.active:after{
+ width:100%;
+}
+.header .navbar > a:hover:after{
+    width: 100%;
+}
+.header .navbar a:hover{
+    color:#741818;   
+}
+
+.header .icons div{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.0rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color:#741818;
+}
+/************************end header******************************/
+/************************home*********************/
+
+.homee{
+    min-height:100vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+.homee .content{
+    text-align: center;
+}
+.homee .content h3{
+    font-size: 4.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+.video-container video{
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+object-fit: cover;
+}
+/****************************end home********************************/
+
+.btn:hover {
+    opacity: 0.6;
+}
+.section-header {
+    text-align: center;
+    margin-top: -40px;
+}
+.section-header .section-title {
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-top: 6px;
+    color: #fff;
+    padding: 20px;
+}
+.section-header .line {
+    display: block;
+    width: 62px;
+    height: 4px;
+    background-color:#741818;
+    margin: 0 auto 70px auto;
+}
+.studio {
+    padding:120px 0;
+    padding-bottom: 50px;
+}
+/******************************************************* start services**************************************************/
+.stud{
+    position: relative;
+}
+.stud::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top:0;
+    left:0;
+    background-color: #73001a; 
+}
+.stud:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+     }
+.container {
+    width: 80%;
+    margin: auto;
+}
+.fa{
+    color:#fff;  
+}
+.services-content {
+    overflow: hidden;
+}
+.services-item {
+    width: 30%;
+    float: left;
+    margin-bottom: 20px;
+    border: 1px solid #a8a8a8;
+    padding: 30px 15px 30px 70px;
+    position: relative;
+}
+.services-item .icon {
+    position: absolute;
+    left: 15px;
+    top: 26px;
+    color: rgb(95, 4, 4);
+}
+.services-item-title {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    transition: 1s;
+    color: #73001a;
+}
+.services-item.stud:hover .services-item-title{
+    color: #fff;
+}
+.services-item.stud:hover .icon{
+    color: #fff;
+}
+.services-item-desc {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #999;
+}
+.services-item.mg {
+    margin: 0% 5%;
+}
+/*************************************************end services**********************************************/
+/*******************************************about**********************/
+.aboutt {
+    background-color: #17262a; 
+}
+.aboutt-item {
+    width: 50%;
+    float: left;
+}
+.aboutt-item .section-header {
+    text-align: left;
+}
+.aboutt-item .section-header .line {
+    margin: 0 0 45px 0;
+}
+.aboutt-item .section-header h2 {
+    color:#fff;
+}
+.aboutt-item-desc {
+    padding-right: 20px;
+    color: #999;
+    line-height: 1.4;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.aboutt-list li {
+    margin-bottom: 13px;
+    color: #fff;
+}
+.aboutt-list li i {
+    border: 1px solid #73001a;
+    color: #73001a;
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.dd {
+    width: 500px;
+    height: 400px;  
+}
+.aboutt-box{
+    list-style: none;
+    text-align: center;
+    padding-right: 200px;  
+}
+.aboutt-box li.active {
+    background-color:#73001a;
+}
+.aboutt-box li {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #cc7171;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+.aboutt-box li:hover{
+    background-color:#73001a;
+}
+.clear {
+    clear: both;
+}
+/******************************************* end about**********************/
+/************** ***************** start contact map**************************/
+ .row{
+    display: flex;
+    align-items: center;
+    background-color:#0a1517;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+ .row form{
+    flex:1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+ .row form h3{
+text-transform: uppercase;
+font-size: 40px;
+color:#fff;
+}
+
+ .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: #fff;
+}
+  .inputBox .span{
+   color:#0a1517;
+    font-size: 2rem;
+}
+.fas{
+    color: #fbfdff;
+    font-size: 30px;
+}
+ .row form .inputBox input{
+    width: 100%;
+    padding:20px;
+    font-size:20px;
+    color:#fff;
+    text-transform: none;
+background: none;
+}
+.btn{
+   background-color: #73001a;
+   color: #fff;
+   font-size: 20px;
+   width: 150px;
+   height: 60px;
+   border: none;
+   border-radius: 10px;
+}
+
+/*****************************end contact map*************************************/
+/*************************start footer*******************************/
+.footer{
+    background:#17262a;
+    text-align: center;
+ height: 450px;
+ padding: 20px 0;
+}
+.footer .share a{
+    height: 6rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    border:.1rem solid rgba(255,255,255,.3);
+    margin:.3rem;
+    border-radius: 50%;
+}
+.footer .share a:hover{
+    background-color: #741818;
+}
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+.footer .links a{
+    padding:.7rem 2rem;
+    color:#fff;
+    border:.1rem solid rgba(255,255,255,.3);
+    font-size: 2rem;
+}
+.footer .links a:hover{
+    background:#741818;
+}
+.footer .credit{
+    font-size: 2rem;
+    color:#fff;
+    font-weight: lighter;
+    padding:1.5rem;
+}
+.footer .credit span{
+    color:#741818;
+    font-weight:bolder ;
+   }
+.new-section-head {
+    position: relative;
+    text-align: center;
+}
+.new-section-head .section-head-word {
+    color: #fbfdff;
+    font-size: 70px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    margin: auto;
+    position: relative;
+    text-transform: uppercase;
+}
+.new-section-head .slogan-word {
+    color: rgba(251,253,255,.6);
+    letter-spacing: 2px;
+    line-height: 1.7;
+    margin: auto;
+    text-transform: capitalize;
+    width: 40%;
+}
+ .new-section-head .decorate img {
+  max-width: 100%;
+  padding: 40px;
+}
+.new-section-head .decorate.left {
+     left: 200px;
+    transform: translateY(-50%) rotateY(180deg) rotate(20deg);
+}
+.new-section-head .decorate.right {
+    right: 200px;
+   transform: translateY(-50%) rotate(20deg);
+}
+.new-section-head .decorate {
+    position: absolute;
+    top: 50%;
+    width: 250px;
+}
+/*************************end footer*******************************/
